@@ -2,14 +2,25 @@ html {
   font-size: 16px;
 }
 body {
+  color: #4A4A4A;
   font-family: Tahoma;
   background-color: white;
   padding: 0;
   margin: 0;
 }
+p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
 h1 {
   font-weight: bolder;
   font-size: 2rem;
+  line-height: 1.25;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 /* header */
 header {
@@ -32,6 +43,11 @@ header nav ul {
   align-items: center;
 }
 header #colmar {
+  color: #4A4A4A;
+  font-weight: bolder;
+}
+header #academy {
+  color: #9B9B9B;
   font-weight: bold;
 }
 @media only screen and (min-width: 480px) {
@@ -93,7 +109,7 @@ header #colmar {
 }
 .button span {
   text-align: center;
-  background-color: black;
+  background-color: #4A4A4A;
   color: white;
   padding: 0.5rem 0;
   margin-top: 1rem;
@@ -132,6 +148,10 @@ header #colmar {
   text-align: left;
   padding: 2rem 1.5rem;
   width: 60%;
+  border-right: 1px solid lightgray;
+}
+.info-block-left h1 {
+  padding: 2rem 0 1.5rem 0;
 }
 .info-block-left img {
   width: 100%;
@@ -144,11 +164,18 @@ header #colmar {
 .info-small {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .info-small img {
   padding: 1rem;
   width: 35%;
   height: 35%;
+}
+.info-small p {
+  padding: 0.5rem 0;
+}
+.info-small a {
+  color: blue;
 }
 @media only screen and (max-width: 480px) {
   .info-block-left {
@@ -160,7 +187,7 @@ header #colmar {
   .info-small {
     width: 100%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
   .info-small img {
     width: 100%;
@@ -177,6 +204,9 @@ header #colmar {
 @media only screen and (min-width: 480px) {
   .info-block-right .mobile {
     display: none;
+  }
+  .info-small #bottom {
+    background-color: darkgray;
   }
 }
 /* Courses */
@@ -232,58 +262,44 @@ header #colmar {
 .thesis-content {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;;
+  padding: 2rem 0;
 }
 .thesis-block-left {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 2rem 1.5rem;
   width: 60%;
+  padding: 0 1rem 2rem 1.5rem;
 }
 .thesis-block-left video {
   width: 100%;
+  padding-bottom: 1.5rem;
 }
 .thesis-block-right {
   width: 35%;
   display: flex;
   flex-direction: column;
-}
-.thesis-block-right h1 {
-  padding: 2rem;
+  align-items: flex-start;
 }
 .thesis-small {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .thesis-small img {
   padding: 1rem;
   width: 35%;
   height: 35%;
 }
+.thesis-small #top {
+  background-color: #F3F5F5;
+}
 @media only screen and (max-width: 480px) {
-  .info-block-left {
-    display: none;
-  }
-  .info-block-right {
-    width: 100%;
-    padding: 1rem;
-  }
-  .info-block-right .info-small {
-    flex-direction: column;
-  }
-  .info-block-right img {
-    width: 100%;
-  }
-  .info-block-right .desktop {
-    display: none;
-  }
+
 }
 @media only screen and (min-width: 480px) {
-  .info-block-right .mobile {
-    display: none;
-  }
+
 }
 footer {
 
